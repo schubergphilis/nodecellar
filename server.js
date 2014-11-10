@@ -1,3 +1,8 @@
+console.log("Env vars are:")
+console.log("MONGO_HOST: " + process.env.MONGO_HOST)
+console.log("MONGO_PORT: " + process.env.MONGO_PORT)
+console.log("NODECELLAR_PORT: " + process.env.NODECELLAR_PORT)
+
 var express = require('express'),
     path = require('path'),
     http = require('http'),
