@@ -6,10 +6,16 @@
   "dependencies": {
     "express": "4.16.0",
     "mongodb": "1.1.8",
-    "socket.io": "1.0.1"
+    "socket.io": "2.0.2",
+    "snyk": "^1.49.5"
   },
   "engines": {
     "node": "0.8.4",
     "npm": "1.1.49"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
