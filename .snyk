@@ -1,0 +1,9 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.8.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:parsejson:20170908':
+    - socket.io > socket.io-client > engine.io-client > parsejson:
+        reason: None given
+        expires: '2017-12-23T15:16:58.833Z'
+patch: {}
